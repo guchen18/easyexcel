@@ -51,3 +51,5 @@ jobs:
         run: ./mvnw install -B -V
       - name: Java Doc
         run: ./mvnw javadoc:javadoc
+      - name: package
+        run: ./mvnw package -Dmaven.test.skip=true
